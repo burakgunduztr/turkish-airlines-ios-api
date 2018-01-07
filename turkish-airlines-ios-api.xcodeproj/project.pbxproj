@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3C27606228EA917337A0BA /* Pods_turkish_airlines_ios_api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E1DBE312FDBDEE116A287B /* Pods_turkish_airlines_ios_api.framework */; };
 		E3CAB7F520022ABB00377AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAB7F420022ABB00377AE9 /* AppDelegate.swift */; };
 		E3CAB7F720022ABB00377AE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAB7F620022ABB00377AE9 /* ViewController.swift */; };
 		E3CAB7FA20022ABB00377AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CAB7F820022ABB00377AE9 /* Main.storyboard */; };
 		E3CAB7FC20022ABB00377AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CAB7FB20022ABB00377AE9 /* Assets.xcassets */; };
 		E3CAB7FF20022ABB00377AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CAB7FD20022ABB00377AE9 /* LaunchScreen.storyboard */; };
+		E3CAB80720022AE600377AE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAB80620022AE600377AE9 /* Constants.swift */; };
+		E3CAB80B20022B0900377AE9 /* Port.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CAB80A20022B0900377AE9 /* Port.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67860E4A3F46A3FB4553C5F4 /* Pods-turkish-airlines-ios-api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-turkish-airlines-ios-api.release.xcconfig"; path = "Pods/Target Support Files/Pods-turkish-airlines-ios-api/Pods-turkish-airlines-ios-api.release.xcconfig"; sourceTree = "<group>"; };
+		B4E1DBE312FDBDEE116A287B /* Pods_turkish_airlines_ios_api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_turkish_airlines_ios_api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CAB7F120022ABB00377AE9 /* turkish-airlines-ios-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "turkish-airlines-ios-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CAB7F420022ABB00377AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3CAB7F620022ABB00377AE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		E3CAB7FB20022ABB00377AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3CAB7FE20022ABB00377AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3CAB80020022ABB00377AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3CAB80620022AE600377AE9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E3CAB80A20022B0900377AE9 /* Port.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Port.swift; sourceTree = "<group>"; };
+		FE4AFF427C0ECFD6A8F0B862 /* Pods-turkish-airlines-ios-api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-turkish-airlines-ios-api.debug.xcconfig"; path = "Pods/Target Support Files/Pods-turkish-airlines-ios-api/Pods-turkish-airlines-ios-api.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3C27606228EA917337A0BA /* Pods_turkish_airlines_ios_api.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36E162967E9511477010B59B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E1DBE312FDBDEE116A287B /* Pods_turkish_airlines_ios_api.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A03E118BD6D09AE03A6C361A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE4AFF427C0ECFD6A8F0B862 /* Pods-turkish-airlines-ios-api.debug.xcconfig */,
+				67860E4A3F46A3FB4553C5F4 /* Pods-turkish-airlines-ios-api.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E3CAB7E820022ABB00377AE9 = {
 			isa = PBXGroup;
 			children = (
 				E3CAB7F320022ABB00377AE9 /* turkish-airlines-ios-api */,
 				E3CAB7F220022ABB00377AE9 /* Products */,
+				A03E118BD6D09AE03A6C361A /* Pods */,
+				36E162967E9511477010B59B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,32 @@
 		E3CAB7F320022ABB00377AE9 /* turkish-airlines-ios-api */ = {
 			isa = PBXGroup;
 			children = (
+				E3CAB80920022AF800377AE9 /* Controller */,
+				E3CAB80820022AF300377AE9 /* Model */,
 				E3CAB7F420022ABB00377AE9 /* AppDelegate.swift */,
-				E3CAB7F620022ABB00377AE9 /* ViewController.swift */,
+				E3CAB80620022AE600377AE9 /* Constants.swift */,
 				E3CAB7F820022ABB00377AE9 /* Main.storyboard */,
 				E3CAB7FB20022ABB00377AE9 /* Assets.xcassets */,
 				E3CAB7FD20022ABB00377AE9 /* LaunchScreen.storyboard */,
 				E3CAB80020022ABB00377AE9 /* Info.plist */,
 			);
 			path = "turkish-airlines-ios-api";
+			sourceTree = "<group>";
+		};
+		E3CAB80820022AF300377AE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3CAB80A20022B0900377AE9 /* Port.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3CAB80920022AF800377AE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3CAB7F620022ABB00377AE9 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3CAB80320022ABB00377AE9 /* Build configuration list for PBXNativeTarget "turkish-airlines-ios-api" */;
 			buildPhases = (
+				366E6177B8D9FA9C1853EF72 /* [CP] Check Pods Manifest.lock */,
 				E3CAB7ED20022ABB00377AE9 /* Sources */,
 				E3CAB7EE20022ABB00377AE9 /* Frameworks */,
 				E3CAB7EF20022ABB00377AE9 /* Resources */,
+				451FE58A93C45CB3B45B150D /* [CP] Embed Pods Frameworks */,
+				8B4CFFA3008283C538EE4237 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +180,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		366E6177B8D9FA9C1853EF72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-turkish-airlines-ios-api-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		451FE58A93C45CB3B45B150D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-turkish-airlines-ios-api/Pods-turkish-airlines-ios-api-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-turkish-airlines-ios-api/Pods-turkish-airlines-ios-api-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4CFFA3008283C538EE4237 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-turkish-airlines-ios-api/Pods-turkish-airlines-ios-api-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3CAB7ED20022ABB00377AE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +243,8 @@
 			files = (
 				E3CAB7F720022ABB00377AE9 /* ViewController.swift in Sources */,
 				E3CAB7F520022ABB00377AE9 /* AppDelegate.swift in Sources */,
+				E3CAB80720022AE600377AE9 /* Constants.swift in Sources */,
+				E3CAB80B20022B0900377AE9 /* Port.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +379,13 @@
 		};
 		E3CAB80420022ABB00377AE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4AFF427C0ECFD6A8F0B862 /* Pods-turkish-airlines-ios-api.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CWR97EZ4E;
 				INFOPLIST_FILE = "turkish-airlines-ios-api/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unofficial.turkish-airlines-ios-api";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +396,13 @@
 		};
 		E3CAB80520022ABB00377AE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67860E4A3F46A3FB4553C5F4 /* Pods-turkish-airlines-ios-api.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CWR97EZ4E;
 				INFOPLIST_FILE = "turkish-airlines-ios-api/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unofficial.turkish-airlines-ios-api";
 				PRODUCT_NAME = "$(TARGET_NAME)";
